@@ -227,21 +227,6 @@ Fraction::Fraction(float number)
  //takes a given float and constructs fraction class object
  void Fraction::floatToFraction(float number)
  {
-     //alternative
-     /*
-    this->denom = 1;
-
-    //while the number isn't equal to itself cast to int, multiply the number and denominator by 10.
-    while(((float(int)number) !=number)
-    {
-        number = number*10
-        this->denom = this->denom *10;
-    }
-
-    this->num = int(number);
-    */
-    
-
 	float fracPart = number - int(number);
 	int wholePart = int(number);
 
