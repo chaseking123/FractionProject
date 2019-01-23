@@ -49,8 +49,6 @@ void printList(const vector<Fraction>&);
 
 int main(int argc, char** argv)
 {
-    //clock_t t;
-    //t = clock();
     string inLine;
     ifstream inFile;
     vector <Fraction> fractionList; //initialize fraction list vector
@@ -80,9 +78,6 @@ int main(int argc, char** argv)
 
     //sort Vector
     sort(fractionList.begin(),	fractionList.end());
-
-    //t = clock() - t;
-    //printf ("It took me %d clicks to sort list (%f seconds).\n",t,((float)t)/CLOCKS_PER_SEC);
 
     cout << "The sum of the sorted fractions is: " << getSum(fractionList) << endl;
     cout << "The difference of the fractions is: " << getDifference(fractionList) << endl;
@@ -157,13 +152,6 @@ Fraction getQuotient(const vector<Fraction> &fractionList)
 
 void printList(const vector<Fraction> &fractionList)
 {
-    /*
-	unsigned long long size = fractionList.size();
-	for(unsigned int i = 0; i < size; i++)
-	{
-		cout << fractionList[i] << endl;
-	}
-    */
     for (auto i: fractionList)
     {
         std::cout << i << endl;
